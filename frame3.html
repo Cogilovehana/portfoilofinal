@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="mystyle.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ffa638262f.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    body {
+        margin: 0;
+
+    }
+    *
+  box-sizing: border-box
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+  
+.progress {
+  width: 100%;
+  max-width: 2000px;
+  height: 6px;
+  background: #e1e4e8;
+  border-radius: 3px;
+  overflow: hidden;
+}
+  
+.progress-bar {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
+    background-size: 300% 100%;
+    animation: progress-animation 2s linear infinite;
+  }
+
+@keyframes progress-animation {
+  0%
+    {background-position: 100%}
+    {background-position: 0}
+}
+</style>
+
+<body>
+   
+    <!--PHẦN 1: mainTOPNAV - chưa chèn phầm media query -->
+    <div class="topnav flex-container-1 ">
+        <ul>
+            <li>
+                <div> <a class="topnav" href="frame3.html"> <b> Contact </b></a></div>
+            </li>
+            <li>
+                <div><a class="topnav" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></div>
+            </li>
+            <li>
+                <div><a class="topnav" href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a> </div>
+            </li>
+            <li>
+                <div><a class="topnav" href="https://github.com/"><i class="fab fa-github"></i></a></div>
+            </li>
+            <li>
+                <div><a class="topnav" href="contact.com"><b>Share <img src="img/muitenxuong.png"></b></a></div>
+            </li> <!-- Phần mũi tên đi xuống sẽ hiện các lựa chọn khác nữa, bổ sung phần này sau nhé! -->
+        </ul>
+    </div>
+    <div class="row">
+
+       <!-- PHAN LAYOUT BEN TRAI -->
+<div class="flex-container-3">
+ 
+        <div style="flex-grow: 3;" class="slide flex-container-2">
+     
+            <div><img src="img/Ellipse 1.png"> </div>
+            <div><h3><b style="text-align: center;">My Name</b></h3></div>
+            <div><a href="thamthbuh@gmail.com"
+                    style=" text-align: center; color:rgb(78, 80, 80); text-decoration: none;"> thamthbuh@gmail.com
+                    <img src="img/Group 8.svg"></a></div>
+                <p>
+                    <img src="img/Vector (1).png">
+                    <a href="index.html" style="color:rgb(78, 80, 80); text-decoration: none;"> My Portfolio</a>
+                </p>
+                <p style="color:rgb(78, 80, 80)">
+                    <a href="frame2.html" style="color:rgb(78, 80, 80); text-decoration: none;"> <img
+                            src="img/Vector (2).png"> About me </a>
+                </p>
+                </div>
+ 
+    </div>
+
+<!-- PHẦN MAIN -->
+<div  style="flex-grow: 6;" class="main">
+        <picture>
+            <source media="(min-width:800px)" srcset="img/biaden.jpg">
+            <source media="(min-width:500px)" srcset="img/laptop.jpg">
+            <img src="img/mobile.jpg" style="width:auto;">
+        </picture>     
+<h1 class="format-contact"> CONTACT </h1>
+        <!-- Chỉnh lại CSS phần type -->
+
+        <form >
+            <input class=" maintopnav" type="text" id="fname" name="firstname" placeholder="Your name.."> <br>
+            <input class=" maintopnav" type="email" id="email" name="email" placeholder="email"> <br>
+            <input class=" maintopnav height" type="text" id="help" name="help" placeholder="How can I help you?" > <br>
+
+            <button class="width160">Send</button>
+        </form>
+    </div>
+</div>
+</div>
+
+<!-- SAMPLE -->
+<div class="progress">
+    <span class="progress-bar" style="width: 75%"></span>
+  </div>
+  <!-- END SAMPLE-->
+
+  <!-- Footer-->
+  <div class="footer">
+    <p>Copyright © 2020 Your Name. All rights reserved.</p>
+</div>
+
+</body>
+
+</html> 

@@ -1,0 +1,325 @@
+/* CSS Flex; position; ... */
+.flex-container-1 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.flex-container-2 {
+display: flex;
+flex-direction: column;
+}
+.flex-container-3 {
+display: flex;
+flex-direction: row;
+padding: 10px;
+margin: 0%;
+line-height: 10px;
+flex-wrap: wrap;
+text-align: left;
+}
+
+.align-items {
+  align-items: center;
+}
+.width160 { 
+  width: 160px;
+}
+.flex-container-2  > div {
+  margin: 10px;
+  text-align: left;
+  font-family: SVN-Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 10px;
+}
+
+.my-portfolio-format {
+font-family: SVN-Gilroy;
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 1px;
+}
+input.maintopnav {
+  width: 470px;
+  box-sizing: border-box;
+  border:#f2f2f2;
+  border-radius: 30px;
+  font-size: 16px;
+  background-color:#F2F2F2;
+  display: flex;
+  line-height: 10px;
+  
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;out;
+}
+input.height {
+  height: 130px;
+}
+h1.format-contact{
+font-family: SVN-Gilroy;
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 67px;
+
+}
+
+input.background {
+  background-image: url('img/searchicon.png');
+
+}
+button {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border-color: black;
+  padding: 10px 40px;
+}
+/* PHẦN TOP NAVIGATION BAR */
+.topnav {
+  background-color: black;
+  text-align: end;
+  color: white;
+  font-family: SVN-Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+li {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px
+}
+
+/* CSS thẻ link cho  TOPNAV */
+
+a.topnav:link {
+  color:white;
+  text-decoration: none;
+}
+a.topnav:visited {
+  color: white;
+  text-decoration: none;
+}
+a.topnav:hover {
+  color: rgba(80, 233, 197, 0.637);
+  text-decoration: none;
+}
+a.topnav:active {
+  color:rgb(231, 203, 42);
+  text-decoration: none;
+}
+/* TẠO 02 COLUNM CHO PHẦN MAIN */
+
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 35%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  
+}
+
+/* Main column */
+.main {
+  flex: 65%;
+  background-color: white;
+  padding: 20px;
+  
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+
+  .row,
+      {
+      flex-direction: column;
+  }
+}
+
+/* Nội dung phần Main */
+
+
+/*PROJECT IMAGE */
+div.flexwrapimage {
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  float: left;
+  width: 200px;
+  overflow: auto;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+div.flexwrapimage:hover {
+  border: 1px solid #777;
+  overflow: auto;
+  flex-wrap: wrap;
+  transform: scale(1,1.2);
+  transition: 0,7s;
+  overflow: hidden;
+}
+/* Đã chỉnh phần hover mở lên cho to lên, 
+chỉnh thêm thời gian chuyển hình bằng cách dùng transition */
+
+div.flexwrapimage img {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+div.desc {
+  padding: 20px;
+  text-align: center;
+  overflow: auto;
+  flex-wrap: wrap;
+  overflow: hidden;
+  line-height: 20px;
+}
+ /* Footer */
+ div.footer {
+  padding: 10px;
+  text-align: left;
+  background: #ddd;
+  font-family: SVN-Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #828282;
+  bottom:0px;
+}
+
+h2.aboutme 
+{
+padding: 5%;
+
+}
+
+
+/*TABLE */
+
+table {
+border-collapse: collapse;
+width: 90%;
+background-color: #F2F2F2;
+border-radius: 5px;
+}
+
+th, td {
+padding: 8px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+/* Phần media query */
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  div.nothing {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  {
+    div.taolao {
+      background: pink;
+    }
+  }
+  /* vẫn chưa hiện được media query */
+
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+/* HR LINE FRAME 2 */
+hr.new90 {
+  border: 2px solid #EB5757;
+  background-color: #EB5757;
+  width:70%;
+  margin-left: 0%;
+  display: inline-block;
+  animation-name: hrline;
+  animation-duration: 4s;
+  animation-iteration-count: 100;
+}
+hr.new100 {
+  border: 2px solid #EB5757;
+  background-color: #EB5757;
+  width:80%;
+  margin-left: 0%;
+  display: inline-block;
+  animation-name: hrline;
+  animation-duration: 4s;
+  animation-iteration-count: 100;
+}
+hr.new85 {
+  border: 2px solid #EB5757;
+  background-color: #EB5757;
+  width:65%;
+  margin-left: 0%;
+  display: inline-block;
+  animation-name: hrline;
+  animation-duration: 4s;
+  animation-iteration-count: 100;
+}
+hr.new75 {
+  border: 2px solid #EB5757;
+  background-color: #EB5757;
+  width:55%;
+  margin-left: 0%;
+  display: inline-block;
+  animation-name: hrline;
+  animation-duration: 4s;
+  animation-iteration-count: 100;
+}
+@keyframes hrline {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
