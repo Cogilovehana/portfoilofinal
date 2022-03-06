@@ -8,6 +8,8 @@
     <title>Document</title>
     <link href="mystyle.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ffa638262f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <style>
    body {
@@ -17,26 +19,30 @@
 </style>
 
 <body>
-    <!-- HỎI CÔ: TẠI SAO NÓ KO CHO TEXT ALIGN LÊN TOP-->
-   
-    <!--PHẦN 1: mainTOPNAV - chưa chèn phầm media query -->
-    <div class="topnav flex-container-1 ">
+    <!-- NAVBAR -->
+    <div class="navbar flex-container-1 ">
         <ul>
             <li>
-                <div> <a class="topnav" href="frame3.html"> <b> Contact </b></a></div>
+                <div> <a class="navbar" href="frame3.html"> <b> Contact </b></a></div>
             </li>
             <li>
-                <div><a class="topnav" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></div>
+                <div><a class="navbar" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></div>
             </li>
             <li>
-                <div><a class="topnav" href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a> </div>
+                <div><a class="navbar" href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a> </div>
             </li>
             <li>
-                <div><a class="topnav" href="https://github.com/"><i class="fab fa-github"></i></a></div>
+                <div><a class="navbar" href="https://github.com/"><i class="fab fa-github"></i></a></div>
             </li>
             <li>
-                <div><a class="topnav" href="contact.com"><b>Share <img src="img/muitenxuong.png"></b></a></div>
-            </li> <!-- Phần mũi tên đi xuống sẽ hiện các lựa chọn khác nữa, bổ sung phần này sau nhé! -->
+                <div class="subnav">
+                    <button class="subnavbtn"> Share <i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                      <a href="#messenger"> Messenger</a>
+                      <a href="#zalo"> Zalo</a>
+                      <a href="#viber"> Viber</a>
+                    </div> </div>
+            </li>
         </ul>
     </div>
 

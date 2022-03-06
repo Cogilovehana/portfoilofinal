@@ -15,6 +15,7 @@ margin: 0%;
 line-height: 10px;
 flex-wrap: wrap;
 text-align: left;
+justify-content: left;
 }
 
 .align-items {
@@ -158,6 +159,7 @@ div.flexwrapimage {
   border: 1px solid #ccc;
   border-radius: 10px;
   float: left;
+  clear: both;
   width: 200px;
   overflow: auto;
   flex-wrap: wrap;
@@ -190,6 +192,8 @@ div.desc {
   flex-wrap: wrap;
   overflow: hidden;
   line-height: 20px;
+  opacity: 0.5;
+  background-color:#f0d7d7;
 }
  /* Footer */
  div.footer {
@@ -243,7 +247,6 @@ border-bottom: 1px solid #ddd;
       background: pink;
     }
   }
-  /* vẫn chưa hiện được media query */
 
   /* For tablets: */
   .col-s-1 {width: 8.33%;}
@@ -321,5 +324,67 @@ hr.new75 {
   25%  {background-color: yellow;}
   50%  {background-color: blue;}
   100% {background-color: green;}
+}
+
+/* MULTI MENU - SUB NAV */
+.navbar {
+  overflow: hidden;
+  background-color: black; 
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 1px 2px ;
+  text-decoration: none;
+  height: fit-content;
+}
+
+.subnav {
+  float: right;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 1px 2px !important;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.subnav:hover .subnavbtn {
+  background-color: black;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: rgb(16, 77, 43);
+  width: 5%;
+  opacity: 0.7;
+}
+
+.subnav-content a {
+  float: right;
+  color: white;
+  text-decoration: none;
+  bottom: 0%;
+  clear: right;
+}
+
+.subnav-content a:hover {
+  background-color: rgb(214, 139, 139);
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
 }
 
